@@ -1,0 +1,1166 @@
+/* Extra small devices (portrait phones, less than 576px)
+No media query since this is the default if you use "mobile first" */
+/* Small devices (landscape phones, 576px and up) */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: spartan;
+}
+h1
+{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2
+{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4
+{
+    font-size: 17px;
+    color: #222;
+}
+h6
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+p
+{
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+    color: #465b52;
+}
+/* .sec-p1
+{
+    padding: 40px 80px;
+} */
+/* .sec-m1
+{
+    margin: 40px 0;
+} */
+/******************************************************************/
+nav
+{
+    background-color: #E3E6F3;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .03);
+    z-index: 100;
+}
+nav .l-side
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .l-side i
+{
+    color: #000;
+    font-size: 23px;
+    margin-left: 20px;
+    transition: .3s;
+}
+nav .l-side i:hover
+{
+    color: #1cc0ba;
+}
+nav .r-side
+{
+    position: fixed;
+    top: 0;
+    transform: translate(100%,0);
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+    background-color: #E3E6F3;
+    padding: 40px ;
+    transition: transform .5s;
+    z-index: 200;
+}
+.hs
+{
+    transform: translate(40%,0) !important;
+}
+.iconhs
+{
+    display: none;
+}
+nav .r-side li
+{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+nav .r-side li .fa-close
+{
+    font-size: 25px;
+}
+nav .r-side li a
+{
+    color:#4f5052;
+    text-decoration: none;
+}
+nav .r-side li a:hover
+{
+    color: #1cc0ba;
+}
+.nav_active
+{
+    color: #1cc0ba !important;
+}
+/********************************************************************************/
+
+header
+{
+    background-image: url('../images/hero4.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+header article
+{
+    transform: translate(0,50%);
+}
+header article h4
+{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+header article h1
+{
+    font-weight: 700;
+}
+header article h1:nth-of-type(2)
+{
+    color: #1cc0ba;
+}
+header article a
+{
+    text-decoration: none !important;
+    border: 2px solid #1cc0ba;
+    background-color: transparent;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 20px;
+    color: #222;
+    transition: .3s;
+}
+header article a:hover
+{
+    background-color: #1cc0ba;
+    color: #fff;
+}
+
+/*******************************************************************/
+.sec1
+{
+    margin-top: 50px;
+}
+.sec1 .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec1 article
+{
+    border: 1px solid #DDD;
+    box-shadow: 5px 5px 20px 6px rgba(0, 0, 0, .03);
+    padding: 20px ;
+    width: 180px;
+    text-align: center;
+    margin-top: 20px;
+}
+.sec1 article h4
+{
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sec1 article:first-of-type h4
+{
+    background-color: #FFDCE4;
+}
+.sec1 article:nth-of-type(2) h4
+{
+    background-color: #C7E5C1;
+}
+.sec1 article:nth-of-type(3) h4
+{
+    background-color: #C3EBFB;
+}
+.sec1 article:nth-of-type(4) h4
+{
+    background-color: #CCD4FC;
+}
+.sec1 article:nth-of-type(5) h4
+{
+    background-color: #F9DCF2;
+}
+.sec1 article:nth-of-type(6) h4
+{
+    background-color: #FEDCF7;
+}
+/**************************************************************************/
+
+.sec2
+{
+    margin-top: 70px;
+    text-align: center;
+}
+.sec2 h1
+{
+    letter-spacing: 2px;
+}
+.sec2 article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2 article figure
+{
+    border: 1px solid #DDd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    margin-top: 30px;
+    transition: box-shadow .5s;
+    cursor: pointer;
+}
+.sec2 article figure:hover
+{
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .1)
+}
+.sec2 article figure img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.sec2 article figure .prod_info
+{
+    text-align: left;
+    margin-top: 15px;
+}
+.sec2 article figure .prod_info span
+{
+    color: rgb(185, 181, 181);
+}
+.sec2 article figure .prod_info h5
+{
+    font-weight: 600;
+}
+.sec2 article figure .prod_info .prod_stars i
+{
+    color: #EBB030 ;
+}
+.sec2 article figure .prod_info h3
+{
+    color: #1cc0ba;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.sec2 article figure .fa-shopping-cart
+{
+    color: #1cc0ba;
+    font-size: 20px;
+    padding: 5px;
+}
+.sec2 article figure>a
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: RGB(123,166,154,.1);
+    padding: 10px ;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*************************************************************************/
+.sec3
+{
+    background-image: url('../images/banner/b2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 50px;
+}
+.sec3 article h4 ,
+.sec3 article h2
+{
+    color: #FFF;
+}
+.sec3 article h2 span
+{
+    color: #C34751;
+}
+.sec3 article a
+{
+    background-color: #FFF;
+    padding: 10px 30px;
+    color: #000;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 2px solid #FFF;
+    transition: .5s;
+}
+.sec3 article a:hover
+{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+}
+/**************************************************************************/
+.sec4 .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec4 figure:first-of-type
+{
+    background-image: url('../images/banner/b17.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 20px;
+    width: 100%; 
+
+}
+.sec4 figure:last-of-type
+{
+    background-image: url('../images/banner/b10.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 20px;
+    width: 100%; 
+
+}
+.sec4 figure h4
+{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+.sec4 figure h2
+{
+    color: #FFF;
+    font-weight: 600;
+}
+.sec4 figure p
+{
+    color: #FFF;
+}
+.sec4 figure a
+{
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 10px 30px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .3s;
+}
+.sec4 figure a:hover
+{
+    background-color: #1cc0ba;
+    border: 2px solid #1cc0ba;
+}
+/**************************************************************************/
+.sec5
+{
+    margin-top: 50px;
+}
+.sec5 figure
+{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    padding: 70px 30px;
+    width: 100%;
+}
+.sec5 figure:first-of-type
+{
+    background-image: url('../images/banner/b7.jpg') ;
+}
+.sec5 figure:nth-of-type(2)
+{
+    background-image: url('../images/banner/b4.jpg') ;
+}
+.sec5 figure:nth-of-type(3)
+{
+    background-image: url('../images/banner/b18.jpg') ;
+}
+.sec5 figure h4
+{
+    color: #FFF;
+    font-size:23px;
+    font-weight: 700;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.sec5 figure p
+{
+    color: #C34751;
+    font-weight: 900;
+}
+/**************************************************************************/
+
+.sec6
+{
+    background-color: #051E41 ;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+.sec6 article h4
+{
+    color: #FFF;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.sec6 article p
+{
+    color: #DDD;
+}
+.sec6 article span
+{
+    color: #EBB030;
+}
+.sec6 form
+{
+    margin-top: 50px;
+}
+.sec6 form span input
+{
+    margin: 0;
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+}
+.sec6 form span input[type='submit']
+{
+    background-color:#7BA69A ;
+    color: #FFF;
+}
+/**************************************************************************/
+
+footer
+{
+    padding: 50px 0;
+}
+footer figure
+{
+    margin-bottom: 50px;
+}
+footer figure:first-of-type img
+{
+    margin-bottom: 20px;
+}
+footer figure h5
+{
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer figure:first-of-type h5 span
+{
+    font-weight: lighter;
+    color: rgb(129, 127, 127);
+    font-size: 15px;
+}
+footer figure:first-of-type ul
+{
+    list-style: none;
+}
+footer figure:first-of-type ul li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+footer figure:first-of-type ul li a i
+{
+    color: #000;
+}
+
+footer figure:nth-of-type(2) ul,
+footer figure:nth-of-type(3) ul
+{
+    list-style: none;
+} 
+footer figure:nth-of-type(2) ul li,
+footer figure:nth-of-type(3) ul li
+{
+    margin-bottom: 10px;
+}
+footer figure:nth-of-type(2) ul a,
+footer figure:nth-of-type(3) ul a
+{
+    color: rgb(129, 127, 127);
+    text-decoration: none;
+}
+footer figure:last-of-type p
+{
+    color: rgb(129, 127, 127);
+}
+footer figure:last-of-type .app_install img
+{
+    border: 2px solid #1cc0ba;
+    cursor: pointer;
+}
+
+/***************************SHOP PAGE ************************************/
+/***************************SHOP PAGE ************************************/
+.shop_header
+{
+    background-image: url('../images/banner/b1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding: 30px;
+}
+.shop_header .container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.shop_header article h1,
+.shop_header article p
+{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.pagemovtion
+{
+    text-align: center;
+    margin-top: 30px;
+}
+.pagemovtion article a
+{
+    background-color: #1cc0ba;
+    color: #FFF;
+    padding: 10px 15px;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/***************************Product Details PAGE ************************************/
+/***************************Product Details PAGE ************************************/
+.productdetails
+{
+    margin-top: 50px;
+}
+.productdetails figure img
+{
+    width: 100%;
+}
+.productdetails figure .prod-small-imgs
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.productdetails figure .prod-small-imgs div
+{
+    flex-basis: 24%;
+}
+.productdetails article
+{
+    margin-top: 40px;
+}
+.productdetails article h3
+{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.productdetails article form 
+{
+    margin-bottom: 20px;
+}
+.productdetails article form select
+{
+    padding: 7px 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+.productdetails article form div input
+{
+    padding: 4px;
+    outline: none;
+}
+.productdetails article form div a
+{
+    background-color: #1cc0ba;
+    color: #FFF;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+/***************************Blog PAGE ************************************/
+/***************************Blog PAGE ************************************/
+.blog_header
+{
+    background-image: url('../images/banner/b19.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding: 30px;
+}
+.blog_header .container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.blog_header article h1,
+.blog_header article p
+{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.blogs 
+{
+    margin: 70px 0 ;
+}
+.blogs .blog figure
+{
+    width: 100%;
+}
+
+.blogs .blog figure img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.blogs .blog figure p
+{
+    font-size: 50px;
+    color: #CECECE;
+    margin-bottom: -30px;
+    font-weight: 700;
+}
+
+.blogs .blog article h3
+{
+    font-size: 23px;
+    font-weight: 700;
+}
+.blogs .blog article a
+{
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.blogs .blog article a:hover
+{
+    color: #1cc0ba;
+}
+
+/***************************about PAGE ************************************/
+/***************************about PAGE ************************************/
+.about_header
+{
+    background-image: url('../images/about/banner.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    padding: 30px;
+}
+.about_header .container
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about_header article h1,
+.about_header article p
+{
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.who_we_are
+{
+    margin: 70px 0;
+}
+.who_we_are img
+{
+    width: 100%;
+}
+
+
+.downapp
+{
+    text-align: center;
+}
+.downapp video
+{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.mapp
+{
+    margin: 70px 0;
+}
+.mapp article span
+{
+    color: #9ea2a0;
+}
+.mapp article h5,
+.mapp article h3
+{
+    font-weight: 700;
+    margin: 20px 0;
+}
+.mapp article .contct i
+{
+    margin-right: 15px;
+    color: #1cc0ba;
+}
+.mapp figure iframe
+{
+    width: 100%;
+}
+
+
+.contctform article span
+{
+    color: #CECECE;
+}
+.contctform article h3
+{
+    font-weight: 700;
+}
+.contctform article form
+{
+    display: flex;
+    flex-direction: column;
+}
+.contctform article form input:not(.contctform article form input[type="submit"]),
+.contctform article form textarea
+{
+    margin-bottom: 20px;
+    padding:7px  10px ;
+    resize: none;
+    outline: none;
+}
+.contctform article form input[type="submit"]
+{
+    width: 100px;
+    padding: 10px 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #1cc0ba;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.contctform figure
+{
+    margin-top: 50px;
+}
+.contctform figure .contctpeople
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.contctform figure .contctpeople div:first-of-type
+{
+    margin-right: 20px;
+}
+.contctform figure .contctpeople div:last-of-type p
+{
+    line-height: .1;
+}
+
+
+/***************************cart PAGE ************************************/
+/***************************cart PAGE ************************************/
+
+.cart
+{
+    margin: 70px 0;
+    overflow-x: auto;
+
+}
+.cart table
+{
+    width: 100%;
+    text-align: center;
+}
+.cart table thead tr th,
+.cart table tbody tr td
+{
+    padding-right: 50px;
+}
+
+.cart table tbody td img
+{
+    width: 70px;
+}
+.cart thead tr
+{
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+.cart thead tr th
+{   
+    padding: 15px 0;
+}
+.cart tbody tr td
+{
+    padding-top: 20px;
+}
+.cart tbody tr td input
+{
+    width: 50px;
+    padding: 7px 5px;
+}
+
+.cart-add 
+{
+    margin: 70px 0;
+}
+.cart-add article h4,
+.cart-add figure h4
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+.cart-add article form input[type="text"]
+{
+    padding: 7px;
+    width: 70%;
+    outline: none;
+}
+.cart-add article form input[type="submit"]
+{
+    padding: 10px 15px;
+    background-color: #1cc0ba;
+    color: #FFF;
+    outline: none;
+    border: none;
+}
+
+.cart-add figure
+{
+    margin-top: 50px;
+    border: 2px solid #DDD;
+    padding: 20px;
+}
+.cart-add figure table 
+{
+    width: 100%;
+    margin: 30px 0;
+}
+.cart-add figure table tr td
+{
+    padding: 10px;  
+}
+.cart-add figure a
+{
+    text-decoration: none;
+    background-color: #1cc0ba;
+    color: #fff;
+    padding: 10px 10px;
+}
+/**************************************************************************/
+/**************************************************************************/
+/**************************************************************************/
+/**************************************************************************/
+@media (min-width: 576px) {
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .sec1 .container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sec1 article
+    {
+        width: 48%;
+        margin-right: 10px;
+    }
+    .sec1 article h4
+    {
+        margin-top: 15px;
+    }
+
+    .sec2 article
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec2 article figure
+    {
+        width: 48%;
+    }
+
+    /***********blog page****************/
+    .blogs .blog
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blogs .blog article
+    {
+        width: 49%;
+    }
+    .blogs .blog figure
+    {
+        width: 49%;
+    } 
+    .blogs .blog figure img
+    {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    nav .l-side>div a
+    {
+        display: none;
+    }
+
+    nav .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .r-side .fa-close
+    {
+        display: none;
+    }
+    nav .r-side
+    {
+        position: static;
+        transform: translate(0,0);
+        width: 0;
+        height: 0;
+        list-style: none;
+        padding: 5px 384px 0 0 ;
+        transition: 0s;
+        z-index: 0;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    nav .r-side li:not(nav .r-side li:last-of-type)
+    {
+        margin-right: 20px;
+    }
+
+    .sec1 article
+    {
+        width: 32%;
+    }
+    .sec2 article figure
+    {
+        width: 23%;
+    }
+    .sec4 .container
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;align-items: flex-start;
+    }
+    .sec4 figure 
+    {
+        width: 49%;
+        margin-right: 15px;
+    }
+    .sec5 .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec5 figure
+    {
+        width: 32%;
+    }
+    .sec6 .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec6 article
+    {
+        width: 60%;
+    }
+    .sec6 form
+    {
+        margin: 0;
+        width: 40%;
+    }
+    .sec6 form input[type='text']
+    {
+        width: 70%;
+    }
+    .sec6 form input[type='submit']
+    {
+        width: 30%;
+    }
+    footer .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer figure:first-of-type
+    {
+        width: 25%;
+        margin-bottom: 0;
+    }
+
+    /**********Product details page************/
+    .productdetails .container
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .productdetails figure
+    {
+        margin-right: 50px;
+        width: 30%;
+    }
+
+    .productdetails article
+    {
+        width: 50%;
+    }
+
+    /**********about page************/
+
+    .who_we_are .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .who_we_are figure,
+    .who_we_are article
+    {
+        width: 49%;
+    }
+    .downapp video
+    {
+        width: 70%;
+    }
+    .mapp .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mapp figure
+    {
+        width: 57%;
+    }
+    .mapp article
+    {
+        width: 40%;
+    }
+
+    .contctform .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contctform figure
+    {
+        width: 36%;
+        margin:0
+    }
+
+    .contctform article
+    {
+        width: 59%
+    }
+
+    /**********cart page************/
+
+    .cart-add .container
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-add figure,
+    .cart-add article
+    {
+        width: 49%;
+        margin: 0;
+    }
+
+
+
+
+
+ 
+  
+    
+    
+    
+
+
+    
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .sec1 article
+    {
+        width: 15%;
+    }
+
+    .blogs .container
+    {
+        max-width: 1100px;
+    }
+    .downapp video
+    {
+        width: 50%;
+    }
+}
